@@ -11,7 +11,7 @@ from src.project import Project
 
 @pytest.fixture
 def project_instance():
-    return Project(file_db='../db/test_db.json')
+    return Project(file_db='db/test_db.json')
 
 def test_add_new_user_valid_level(project_instance):
     current_user_level = 5
